@@ -1,8 +1,8 @@
 ---
-tags: [OpenLearn/Week3]
+tags: [OpenLearn/Week 3]
 title: Brackets in mathematics
 created: '2021-06-23T21:12:29.520Z'
-modified: '2021-06-23T21:42:00.951Z'
+modified: '2021-07-22T21:23:37.207Z'
 ---
 
 # Brackets in mathematics

@@ -1,8 +1,8 @@
 ---
-tags: [OpenLearn/Week3]
+tags: [OpenLearn/Week 3]
 title: Why use algebra?
 created: '2021-06-19T13:51:42.073Z'
-modified: '2021-06-19T14:00:24.560Z'
+modified: '2021-07-22T21:22:58.705Z'
 ---
 
 # Why use algebra?

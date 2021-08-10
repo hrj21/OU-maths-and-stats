@@ -1,8 +1,8 @@
 ---
-tags: [OpenLearn/Week3]
+tags: [OpenLearn/Week 3]
 title: Simplifying algebraic expressions
 created: '2021-06-19T14:00:37.584Z'
-modified: '2021-06-23T21:01:08.015Z'
+modified: '2021-07-22T21:23:36.918Z'
 ---
 
 # Simplifying algebraic expressions
