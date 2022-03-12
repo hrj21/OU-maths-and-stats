@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>Questions 7 maxima</title>
+    <meta name="generator" content="wxMaxima"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="Questions%207%20maxima_htmlimg/Questions%207%20maxima.css"/>
+  </head>
+  <body>
+    <!-- ****************************************************** -->
+    <!-- *        Created with wxMaxima version 19.07.0       * -->
+    <!-- ****************************************************** -->
+    <noscript>
+      <div class="error message">
+        <p>Please enable JavaScript in order to get a 2d display of the equations embedded in this web page.</p>
+      </div>
+    </noscript>
+    <p hidden="hidden">\(      \DeclareMathOperator{\abs}{abs}
+      \newcommand{\ensuremath}[1]{\mbox{$#1$}}
+\)</p>
+    <!-- Text cell -->
+    <div class="comment">
+      <p>This question is about the function:
+        <br/>
+      </p>
+    </div>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i1)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">f</span>(
+            <span class="code_variable">x</span>) 
+            <span class="code_operator">:</span>
+            <span class="code_operator">=</span> (
+            <span class="code_number">8</span>·(
+            <span class="code_variable">x</span>
+            <span class="code_operator">^</span>
+            <span class="code_number">7</span>
+            <span class="code_operator">−</span>
+            <span class="code_number">7</span>·
+            <span class="code_variable">x</span>
+            <span class="code_operator">^</span>
+            <span class="code_number">4</span>
+            <span class="code_operator">+</span>
+            <span class="code_number">3</span>·
+            <span class="code_variable">x</span>)) 
+            <span class="code_operator">/</span> (
+            <span class="code_variable">x</span>
+            <span class="code_operator">^</span>
+            <span class="code_number">4</span>
+            <span class="code_operator">+</span>
+            <span class="code_number">4</span>)
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext>(%o1) </mtext>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mi>f</mi>
+              <mo>⁡</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>x</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>:=</mo>
+            <mfrac>
+              <mrow>
+                <mn>8</mn>
+                <mo>⁢</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msup>
+                      <mi>x</mi>
+                      <mn>7</mn>
+                    </msup>
+                    <mi>−</mi>
+                    <mn>7</mn>
+                    <mo>⁢</mo>
+                    <msup>
+                      <mi>x</mi>
+                      <mn>4</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>3</mn>
+                    <mo>⁢</mo>
+                    <mi>x</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mrow>
+                <msup>
+                  <mi>x</mi>
+                  <mn>4</mn>
+                </msup>
+                <mo>+</mo>
+                <mn>4</mn>
+              </mrow>
+            </mfrac>
+          </mtd>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <!-- Text cell -->
+    <div class="comment">
+      <p>a) Plot the graph of f, choosing ranges of values on the x- and y-axes to make its two stationary points clearly visible.
+</p>
+    </div>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i2)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">wxplot2d</span>(
+            <span class="code_function">f</span>(
+            <span class="code_variable">x</span>), [
+            <span class="code_variable">x</span>, 
+            <span class="code_number">0</span>, 
+            <span class="code_number">2</span>], [
+            <span class="code_variable">y</span>, 
+            <span class="code_number">−</span>
+            <span class="code_number">15</span>, 
+            <span class="code_number">10</span>])
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext>(%t2) </mtext>
+          </mtd>
+          <mtd/>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <img src="Questions%207%20maxima_htmlimg/Questions%207%20maxima_2.png" width="598" style="max-width:90%;" loading="lazy" alt=" (Graphics) "/>
+    <br/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext>(%o2) </mtext>
+          </mtd>
+          <mtd/>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <!-- Text cell -->
+    <div class="comment">
+      <p>b) Find the derivative of f.
+</p>
+    </div>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i3)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">f_prime</span>(
+            <span class="code_variable">x</span>)
+            <span class="code_operator">:</span>
+            <span class="code_operator">=</span>
+            <span class="code_operator">'</span>
+            <span class="code_operator">'</span>(
+            <span class="code_function">diff</span>(
+            <span class="code_function">f</span>(
+            <span class="code_variable">x</span>), 
+            <span class="code_variable">x</span>, 
+            <span class="code_number">1</span>))
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext>(%o3) </mtext>
+          </mtd>
+          <mtd>
+            <mrow>
+              <msub>
+                <mi>f</mi>
+                <mi>prime</mi>
+              </msub>
+              <mo>⁡</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>x</mi>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>:=</mo>
+            <mfrac>
+              <mrow>
+                <mn>8</mn>
+                <mo>⁢</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>7</mn>
+                    <mo>⁢</mo>
+                    <msup>
+                      <mi>x</mi>
+                      <mn>6</mn>
+                    </msup>
+                    <mi>−</mi>
+                    <mn>28</mn>
+                    <mo>⁢</mo>
+                    <msup>
+                      <mi>x</mi>
+                      <mn>3</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>3</mn>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mrow>
+                <msup>
+                  <mi>x</mi>
+                  <mn>4</mn>
+                </msup>
+                <mo>+</mo>
+                <mn>4</mn>
+              </mrow>
+            </mfrac>
+            <mi>−</mi>
+            <mfrac>
+              <mrow>
+                <mn>32</mn>
+                <mo>⁢</mo>
+                <msup>
+                  <mi>x</mi>
+                  <mn>3</mn>
+                </msup>
+                <mo>⁢</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msup>
+                      <mi>x</mi>
+                      <mn>7</mn>
+                    </msup>
+                    <mi>−</mi>
+                    <mn>7</mn>
+                    <mo>⁢</mo>
+                    <msup>
+                      <mi>x</mi>
+                      <mn>4</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>3</mn>
+                    <mo>⁢</mo>
+                    <mi>x</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msup>
+                      <mi>x</mi>
+                      <mn>4</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>4</mn>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </mfrac>
+          </mtd>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <!-- Text cell -->
+    <div class="comment">
+      <p>c) Calculate the x- and y-coordinates of the local maximum of f, giving your answers to three decimal places.
+</p>
+    </div>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i4)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_variable">loc_max_x</span>
+            <span class="code_operator">:</span>
+            <span class="code_function">find_root</span>(
+            <span class="code_function">f_prime</span>(
+            <span class="code_variable">x</span>), 
+            <span class="code_variable">x</span>, 
+            <span class="code_number">0</span>
+            <span class="code_number">.</span>
+            <span class="code_number">4</span>, 
+            <span class="code_number">0</span>
+            <span class="code_number">.</span>
+            <span class="code_number">6</span>)
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext>(%o4) </mtext>
+          </mtd>
+          <mtd>
+            <mn>0.4731664816180412</mn>
+          </mtd>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i5)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_variable">loc_max_y</span>
+            <span class="code_operator">:</span>
+            <span class="code_function">f</span>(
+            <span class="code_variable">loc_max_x</span>)
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext>(%o5) </mtext>
+          </mtd>
+          <mtd>
+            <mn>2.121284107033947</mn>
+          </mtd>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <!-- Text cell -->
+    <div class="comment">
+      <p>Therefore, the x- and y-coordinates of the local maximum of f are 0.473 and 2.121, respectively (both to 3 d.p.)
+</p>
+    </div>
+    <!-- Text cell -->
+    <div class="comment">
+      <p>d) Calculate the value of x where the graph first crosses the x-axis to the right of x = 0. Find the area enclosed by the graph of f and the x-axis, between x = 0 and this value, giving your answer to three decimal places.
+</p>
+    </div>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i6)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_variable">first_cross</span>
+            <span class="code_operator">:</span>
+            <span class="code_function">find_root</span>(
+            <span class="code_function">f</span>(
+            <span class="code_variable">x</span>), 
+            <span class="code_variable">x</span>, 
+            <span class="code_number">0</span>
+            <span class="code_number">.</span>
+            <span class="code_number">1</span>, 
+            <span class="code_number">1</span>
+            <span class="code_number">.</span>
+            <span class="code_number">5</span>)
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext>(%o6) </mtext>
+          </mtd>
+          <mtd>
+            <mn>0.7711708363212311</mn>
+          </mtd>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i7)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">float</span>(
+            <span class="code_function">integrate</span>(
+            <span class="code_function">f</span>(
+            <span class="code_variable">x</span>), 
+            <span class="code_variable">x</span>, 
+            <span class="code_number">0</span>, 
+            <span class="code_variable">first_cross</span>))
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext/>
+          </mtd>
+          <mtd>
+            <mo>rat: replaced 0.7711708363212311 by 4373690/5671493 = 0.7711708363212297</mo>
+          </mtd>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mtable>
+        <mlabeledtr columnalign="left">
+          <mtd>
+            <mtext>(%o7) </mtext>
+          </mtd>
+          <mtd>
+            <mn>1.035379653886037</mn>
+          </mtd>
+        </mlabeledtr>
+      </mtable>
+    </math>
+    <!-- Text cell -->
+    <div class="comment">
+      <p>The area enclosed by the graph of f and the x-axis between x=0 and where the graph next crosses the x-axis is 1.035 (to 3 d.p.)
+</p>
+    </div>
+    <hr/>
+    <p>
+      <small> Created with 
+        <a href="https://wxMaxima-developers.github.io/wxmaxima/">wxMaxima</a>.</small>
+    </p>
+  </body>
+</html>
